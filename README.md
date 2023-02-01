@@ -1,3 +1,3 @@
-# Fichier README.md
+# fichier README.md
 
-Il ne contient pas grand choze.
+Il ne contient pas grand chose pour le moment.
