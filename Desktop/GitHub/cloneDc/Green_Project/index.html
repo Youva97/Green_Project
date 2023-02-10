@@ -23,10 +23,10 @@
   <body class="bg-info">
     <!--  Nous allons intégré un menu de navigation et le stylisé grâce à Bootstrap dans un premier temps -->
     <header>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <nav class="navbar navbar-expand-lg bg-success">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img class="float-start rounded mx-auto d-block" src="./ressources/Claudia.png" 
-            alt="Claudia" height="36" width="36">
+          <a class="navbar-brand" href="#"><img class="float-start rounded mx-auto d-block"
+             src="./ressources/Claudia.png" alt="Claudia" height="36" width="36">
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
           data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
@@ -36,17 +36,17 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Acceuil</a>
+                <a class="nav-link text-light active" aria-current="page" href="#">Acceuil</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Suivez nous</a>
+                <a class="nav-link text-light" href="#">Suivez nous</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">À propos</a></li>
+                <a class="nav-link text-light" href="#">À propos</a></li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Notre histoire</a></li>
+                <a class="nav-link text-light" href="#">Notre histoire</a></li>
               <li class="nav-item">
-                <a class="nav-link disabled">Nous Contacter</a>
+                <a class="nav-link disabled text-light">Nous Contacter</a>
               </li>
             </ul>
             <form class="d-flex" role="search">
@@ -57,7 +57,62 @@
         </div>
       </nav>                   
     </header>
-
+    <main class="container-fluid">
+      <div class="row">
+        <div class="mainFontFam" id="mainImage">
+          <h1 class="text-success">Green Wash, Dry n'Chill</h1>
+          <h2 class="text-light">Blanchisserie parisienne jamais vue auparavant!</h2>
+        </div>
+      </div>
+      <div class="row">
+        <nav id="navbar-example2" class="navbar text-bg-light px-3 mb-3">
+          <a class="navbar-brand text-success" href="#">Menue</a>
+          <ul class="nav nav-pills">
+            <li class="nav-item">
+              <a class="nav-link text-success" href="#scrollspyHeading1">Stages</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-success" href="#scrollspyHeading2">Sport</a>
+            </li>
+           <li class="nav-item">
+              <a class="nav-link text-success" href="#scrollspyHeading3">Santé</a>
+            </li>
+          </ul>
+        </nav>
+        <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
+          <article class="col-12 m-1 col-lg">
+            <div class="bg-success thirdFontFam cadre">
+              <h3 class="secondaryFontFam text-info">Stages</h3>
+              <div class="rounded m-2 text-light" id="imgStage">
+                <p id="scrollspyHeading1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi libero facilis assumenda repellat mollitia nostrum explicabo doloremque, voluptas debitis natus. Quasi sit nostrum esse explicabo dolore eum illum maxime ad!</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi libero facilis assumenda repellat mollitia nostrum explicabo doloremque, voluptas debitis natus. Quasi sit nostrum esse explicabo dolore eum illum maxime ad!</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi libero facilis assumenda repellat mollitia nostrum explicabo doloremque, voluptas debitis natus. Quasi sit nostrum esse explicabo dolore eum illum maxime ad!</p>
+              </div>
+            </div>
+          </article>
+          <article class="col-12 m-1 col-lg">
+            <div class="bg-success thirdFontFam cadre">
+              <h3 class="secondaryFontFam text-info">Sport</h3>
+              <div class="rounded m-2 text-light" id="imgSport">
+                <p id="scrollspyHeading2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores necessitatibus officia culpa libero mollitia id totam non repellat numquam omnis error, blanditiis saepe, deleniti nemo temporibus at aliquid alias quod.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores necessitatibus officia culpa libero mollitia id totam non repellat numquam omnis error, blanditiis saepe, deleniti nemo temporibus at aliquid alias quod.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores necessitatibus officia culpa libero mollitia id totam non repellat numquam omnis error, blanditiis saepe, deleniti nemo temporibus at aliquid alias quod.</p>
+              </div>
+            </div>
+          </article>
+          <article class="col-12 m-1 col-lg">
+            <div class=" bg-success thirdFontFam cadre">
+              <h3 class="secondaryFontFam text-info">Santé</h3>
+              <div class="rounded m-2 text-light" id="imgSante">
+                <p id="scrollspyHeading3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure voluptatem, magni culpa ipsum tempora ex, necessitatibus perspiciatis, ratione ab dolore nemo perferendis consequatur! Tempore sunt ipsa sed ratione asperiores quo.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure voluptatem, magni culpa ipsum tempora ex, necessitatibus perspiciatis, ratione ab dolore nemo perferendis consequatur! Tempore sunt ipsa sed ratione asperiores quo.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure voluptatem, magni culpa ipsum tempora ex, necessitatibus perspiciatis, ratione ab dolore nemo perferendis consequatur! Tempore sunt ipsa sed ratione asperiores quo.</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </main>
     
     <!-- JAVASCRIPT BOOTSTRAP -->
     <script src="../../GREEN wash dry n'chill/Green script/bootstrap.min.js"></script>
