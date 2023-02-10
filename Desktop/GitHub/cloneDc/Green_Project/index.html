@@ -12,16 +12,52 @@
      de conscience écologique au travers de sa clientèle de proximité.  ">
     
     <!-- CSS BOOTSTRAP -->
-    <link rel="stylesheet" href="../../GREEN wash dry n'chill/Green css/bootstrap.min.css">
-    <link rel="stylesheet" href="../../GREEN wash dry n'chill/Green css/bootstrap.min.css.map">
+    <link rel="stylesheet" href="../../../GitHub/GREEN wash dry n'chill/Green css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../GitHub/GREEN wash dry n'chill/Green css/style.css">
+    <link rel="stylesheet" href="../../../GitHub/GREEN wash dry n'chill/Green css/bootstrap.min.css.map">
 
-    <!-- CSS GREEN PROJECT -->
+    <!-- CSS Stylesheet -->
     <link rel="stylesheet" href="./style.css">
     <title>Green Project</title>
   </head>
-  <body>
-    <!-- Je vais définir avec bootstrap les grilles de mon site  -->
-    
+  <body class="bg-info">
+    <!--  Nous allons intégré un menu de navigation et le stylisé grâce à Bootstrap dans un premier temps -->
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img class="float-start rounded mx-auto d-block" src="./ressources/Claudia.png" 
+            alt="Claudia" height="36" width="36">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+          aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Acceuil</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Suivez nous</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">À propos</a></li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Notre histoire</a></li>
+              <li class="nav-item">
+                <a class="nav-link disabled">Nous Contacter</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Recherche">
+              <button class="btn btn-outline-success" type="submit">Recherche</button>
+            </form>
+          </div>
+        </div>
+      </nav>                   
+    </header>
+
     
     <!-- JAVASCRIPT BOOTSTRAP -->
     <script src="../../GREEN wash dry n'chill/Green script/bootstrap.min.js"></script>
