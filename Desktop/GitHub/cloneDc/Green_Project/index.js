@@ -12,7 +12,6 @@ const calendar = {
   openingRooms: ["07h00", "06h00", "08h00"],
   closingRooms: ["20h00", "22h00", "23h00"],
 };
-
 // Récupération des éléments HTML correspondant aux cellules du tableau
 const mondayOpening = document.getElementById("mondayOpening");
 const mondayClosing = document.getElementById("mondayClosing");
@@ -29,7 +28,7 @@ const saturdayClosing = document.getElementById("saturdayClosing");
 const sundayOpening = document.getElementById("sundayOpening");
 const sundayClosing = document.getElementById("sundayClosing");
 
-// Récupération des éléments HTML corrspondant aux cellule du tableau
+// Récupération des éléments HTML correspondant aux cellule du tableau
 const dayOfWeekElems = document.querySelectorAll(".dayOfWeekElems");
 
 // Affichage des jours de la semaines
