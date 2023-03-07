@@ -31,8 +31,8 @@ const sundayClosing = document.getElementById("sundayClosing");
 // Récupération des éléments HTML correspondant aux cellule du tableau
 const dayOfWeekElems = document.querySelectorAll(".dayOfWeekElems");
 
-// Affichage des jours de la semaines
-// Affichage des heures d'ouverture et de fermeture en fonction du jour de la semaine
+// Affichage des jours de la semaine
+// Affichage des heures d'ouvertures et de fermetures en fonction du jour de la semaine
 for (let i = 0; i < calendar.dayWeeks.length; i++) {
   const dayOfWeek = calendar.dayWeeks[i];
   const dayOfWeekElem = dayOfWeekElems[i];
@@ -84,7 +84,7 @@ for (let i = 0; i < calendar.dayWeeks.length; i++) {
   }
 }
 
-// Récupération des éléments boutons et paragraphe
+// Récupération des éléments boutons et paragraphes
 const eventButtonPara = document.querySelectorAll(".eventButtonPara");
 const eventContentPara = document.querySelectorAll(".eventContentPara");
 
