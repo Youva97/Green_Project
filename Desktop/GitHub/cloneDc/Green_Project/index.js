@@ -83,3 +83,26 @@ for (let i = 0; i < calendar.dayWeeks.length; i++) {
       break;
   }
 }
+
+// Récupération des éléments boutons et paragraphe
+const eventButtonPara = document.querySelectorAll(".eventButtonPara");
+const eventContentPara = document.querySelectorAll(".eventContentPara");
+
+// Pour chaque bouton, ajouter un écouteur d'événement pour le survol de la souris
+eventButtonPara.forEach((button) => {
+  button.addEventListener("mouseover", (event) => {
+    // Vérifier si le curseur de la souris est sur le bouton
+    const isCursorOverButton = event.target.matches(":hover");
+
+    if (isCursorOverButton) {
+      // Activation du bouton en modifiant son style
+      eventContentPara.style.overflow = "scroll";
+    }
+  });
+
+  // Ajouter un écouteur d'événement pour la sortie de la souris
+  button.addEventListener("mouseout", () => {
+    // Désactivation du bouton en modifiant son style
+    eventContentPara.style.display = "none";
+  });
+});
