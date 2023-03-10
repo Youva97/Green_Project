@@ -66,7 +66,7 @@
     border-radius: 15px;
   }
   #imgStage{
-    background-image: url(../../../ELIOSPROJECT/VisualForm/support-projet-2-master/media/main.jpg);
+    background-image: url(../../../ELIOSPROJECT/VisualForm/support-projet-2-master/media/);
     height: 50%;
     width: 85%;
     background-position: center;
@@ -86,4 +86,15 @@
     background-position: center;
     background-size: cover;
   }
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.reveal-visible {
+  opacity: 1;
+  transform: translateX(0);
+  transition: 1s;
 }
