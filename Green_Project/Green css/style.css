@@ -1,0 +1,233 @@
+/*  Importing font face */
+@font-face {
+  font-family: "libelSuit";
+  src: url(../ressources/font/libel_suit/libel-suit-rg.otf) format("truetype");
+}
+@font-face {
+  font-family: "Overlock";
+  src: url(../ressources/font/Overlock/Overlock-Italic.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Marcellus";
+  src: url(../ressources/font/Marcellus/Marcellus-Regular.ttf) format("truetype");
+}
+
+a{
+  color:black;
+  text-decoration : none;
+}
+main{
+  min-height: 100vh;
+}
+
+/* Utilities */
+.mainFontFam{
+  font-family: "libelSuit";
+}
+.secondaryFontFam{
+  font-family: "Overlock",Arial, Helvetica, sans-serif;
+}
+.thirdFontFam{
+  font-family: "Marcellus";
+}
+.cadre{
+  color:rgb(69, 63, 63);
+  opacity: .9;
+  padding:15px;
+  border-radius: 15px;
+}
+.bg-orange{
+  background-color:rgba(241, 147, 3, 1);
+}
+.bg-success{
+  background-color: rgba(30, 199, 4, 0.844); 
+}
+.bg-success-small-opacity{
+  background-color: rgba(30, 199, 4, 0.64); 
+}
+.bg-success-navbar{
+  background-color: rgba(30, 199, 4, 0.844);
+  opacity: .9;
+  border: 1px solid rgba(0, 0, 0, 0.48);
+  border-radius: 0 0 15px 15px;
+}
+
+.btn-orange{
+  background-color: rgba(241, 147, 3,1);
+  border-color: rgb(208, 126, 3);
+  border: 1px solid;
+  font-family: "LibelSuit", Arial, Helvetica, sans-serif;
+}
+
+.btn-orange:hover{
+  color: white;
+  background-color: rgb(159, 98, 7);
+  border-color: rgb(66, 40, 3);
+  border: 1px solid;
+}
+
+.row-separate{
+  height: 5px;
+  background-color: white;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.img-cart{
+  height: 20%;
+}
+
+.card-size{
+  height: 100%;
+}
+
+.btn-bot{
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+.animateCard{
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+.animateCard:hover{
+  transform: translate(3px,-3px);
+}
+.shadow-card{
+  box-shadow: 5px 10px 10px rgba(255, 255, 255, 0.603);
+}
+.collapsed-event{
+  display: none;
+}
+.chevron-down::after{
+  font-family: 'bootstrap-icons';
+  content : "\F282";
+  position: absolute;
+  right:40px;
+}
+.chevron-up::after{
+  font-family: 'bootstrap-icons';
+  content : "\F286";
+  position: absolute;
+  right:40px;
+}
+.clickable{
+  cursor: pointer;
+  background-color: rgba(165, 155, 143, 0.601);
+  border-radius: 10px;
+  margin:10px;
+  padding: 5px;
+  transition: all 0.3s ease-out;
+}
+.clickable:hover{
+  background-color: rgb(165, 155, 143);
+}
+
+/* Precise CSS */
+#mainImage{
+  background-image: url(../ressources/installationBW.jpg);
+  height: 60vh;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#mainText{
+  text-align: center;
+  padding: 5px 15px 5px 15px;
+}
+#mapGoogle{
+  height: 95%;
+  width: 95%;
+}
+#adressAsso{
+  background-color: rgba(203, 199, 199, 0.235);
+  color: black;
+  font-size: 0.8rem;
+  border-radius: 5px;
+}
+#adressAsso p{
+  padding: 0;
+  margin: 0;
+}
+#buttonMap::after{
+  content: "\F64B";
+  font-family: 'bootstrap-icons';
+  margin-left:5px;
+}
+#phone::before{
+  content: "\F5C1";
+  font-family: 'bootstrap-icons';
+}
+#mail::before{
+  content: "\F32F";
+  font-family: 'bootstrap-icons';
+}
+#logo3S{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-image: url(../ressources/logoH3S.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#facebook::before{
+  content: "\F344";
+  font-family: 'bootstrap-icons';
+  margin-right: 3px;
+}
+#copyright{
+  font-size: 0.7rem;
+  line-height: 0.6;
+}
+
+
+/* Media queries */
+@media screen and (min-width:991px) {
+  .cadre{
+    color:rgb(69, 63, 63);
+    opacity: .9;
+    min-height: 400px;
+    padding:15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    border-radius: 15px;
+  }
+  #imgStage{
+    background-image: url(../ressources/stages.jpg);
+    height: 50%;
+    width: 85%;
+    background-position: center;
+    background-size: cover;
+  }
+  .imgSport{
+    background-image: url(../ressources/sports.jpeg);
+    height: 50%;
+    width: 85%;
+    background-position: center;
+    background-size: cover;
+  }
+  .imgSante{
+    background-image: url(../ressources/santé.jpg);
+    height: 50%;
+    width: 85%;
+    background-position: center;
+    background-size: cover;
+  }
+  #mapMontreuil{
+    background-image: url(https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2625.4146963130115!2d2.3859996999999997!3d48.85030210000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e6720c7ff09fbd%3A0xb2e6c74b866b47f7!2s30%20Rue%20de%20Montreuil%2C%2075011%20Paris!5e0!3m2!1sfr!2sfr!4v1663867988876!5m2!1sfr!2sfr://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2625.41451230647!2d2.3838110153976126!3d48.85030560923037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e6720c7ff09fbd%3A0xb2e6c74b866b47f7!2s30%20Rue%20de%20Montreuil%2C%2075011%20Paris!5e0!3m2!1sfr!2sfr!4v1662485551015!5m2!1sfr!2sfr);
+    height: 25%;
+    width: 50%;
+    background-position: center;
+    background-size: contain;
+  }
+}
+
+.text-light{
+  text-decoration: lightgray;
+  opacity: 1;
+}
